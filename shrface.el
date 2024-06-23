@@ -559,7 +559,7 @@ Argument FACE face."
         (let ((url (dom-attr (dom-by-tag dom 'a) 'href)))
           (shrface-insert-org-link url dom)))
     (unless shrface-toggle-bullets
-      (insert (propertize (concat " " (shrface-bullets-level-string 2) " ") 'face 'shrface-h2-face 'shrface-bullet "shrface-h2-bullet")))
+      (insert (propertize (concat (shrface-bullets-level-string 2) " ") 'face 'shrface-h2-face 'shrface-bullet "shrface-h2-bullet")))
     (shrface-shr-fontize-dom dom props face))
   (shr-ensure-paragraph))
 
@@ -575,7 +575,7 @@ Argument FACE face."
         (let ((url (dom-attr (dom-by-tag dom 'a) 'href)))
           (shrface-insert-org-link url dom)))
     (unless shrface-toggle-bullets
-      (insert (propertize (concat "  " (shrface-bullets-level-string 3) " ") 'face 'shrface-h3-face 'shrface-bullet "shrface-h3-bullet")))
+      (insert (propertize (concat (shrface-bullets-level-string 3) " ") 'face 'shrface-h3-face 'shrface-bullet "shrface-h3-bullet")))
     (shrface-shr-fontize-dom dom props face))
   (shr-ensure-paragraph))
 
@@ -591,7 +591,7 @@ Argument FACE face."
         (let ((url (dom-attr (dom-by-tag dom 'a) 'href)))
           (shrface-insert-org-link url dom)))
     (unless shrface-toggle-bullets
-      (insert (propertize (concat "   " (shrface-bullets-level-string 4) " ") 'face 'shrface-h4-face 'shrface-bullet "shrface-h4-bullet")))
+      (insert (propertize (concat (shrface-bullets-level-string 4) " ") 'face 'shrface-h4-face 'shrface-bullet "shrface-h4-bullet")))
     ;; (insert (propertize  "**** " 'face 'shrface-h4-face))
     (shrface-shr-fontize-dom dom props face))
   (shr-ensure-paragraph))
@@ -608,7 +608,7 @@ Argument FACE face."
         (let ((url (dom-attr (dom-by-tag dom 'a) 'href)))
           (shrface-insert-org-link url dom)))
     (unless shrface-toggle-bullets
-      (insert (propertize (concat "    " (shrface-bullets-level-string 5) " ") 'face 'shrface-h5-face 'shrface-bullet "shrface-h5-bullet")) )
+      (insert (propertize (concat (shrface-bullets-level-string 5) " ") 'face 'shrface-h5-face 'shrface-bullet "shrface-h5-bullet")) )
     (shrface-shr-fontize-dom dom props face))
   (shr-ensure-paragraph))
 
@@ -624,7 +624,7 @@ Argument FACE face."
         (let ((url (dom-attr (dom-by-tag dom 'a) 'href)))
           (shrface-insert-org-link url dom)))
     (unless shrface-toggle-bullets
-      (insert (propertize (concat "     " (shrface-bullets-level-string 6) " ") 'face 'shrface-h6-face 'shrface-bullet "shrface-h6-bullet")))
+      (insert (propertize (concat (shrface-bullets-level-string 6) " ") 'face 'shrface-h6-face 'shrface-bullet "shrface-h6-bullet")))
     ;; (insert (propertize  "****** " 'face 'shrface-h6-face))
     (shrface-shr-fontize-dom dom props face))
   (shr-ensure-paragraph))
